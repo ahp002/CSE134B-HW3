@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <header>
+        <h1>Just to Experiment</h1>
+    </header>
+    <body>
+        <template>
+            <h2>Prince, my dog</h2>
+            <img src="imgs/Prince.jpg" alt="Picture of Dog" style="width:274px;">
+        </template>
+        <canvas id="triangle">
+            Make sure your browser can support the canvas tag!
+        </canvas>
+        <script>
+            let canvas = document.getElementById("triangle");
+            let ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#FFFFFF";
+            ctx.beginPath();
+            ctx.moveTo(90,40);
+            ctx.lineTo(180,80);
+            ctx.lineTo(20,100);
+            ctx.lineTo(90,40);
+            ctx.stroke();
+        </script>
+        <picture>
+            <img src="imgs/Prince.jpg" alt="Picture of Dog" style="width:274px;">
+        </picture>
+        <audio controls>
+            <source src="sounds/visuals/eating-chips-81092.mp3" type="audio/mpeg">
+        </audio>
+        <video width="320" height="240" controls>
+            <source src="sounds/visuals/135757-764361791_tiny.mp4" type="video/mp4">
+        </video>
+        <br><br><br><br><br><br><br>
+
+        <math display="block">
+            <mrow>
+                <mi>E</mi>
+                <mo>=</mo>
+                <mrow>
+                    <mi>m</mi>
+                </mrow>
+                <mrow>
+                    <msup>
+                        <mi>c</mi>
+                        <mn>2</mn>
+                    </msup>
+                </mrow>
+            </mrow>
+        </math>
+    </body>
+</html>
