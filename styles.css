@@ -10,6 +10,8 @@ html, body {
     --content-color: #8B8C89;
     --title-color: #274C77;
     --container-color: #E7ECEF;
+    --primary-font: "Lato", sans-serif;
+    --secondary-font: "Montserrat", sans-serif;
 }
 
 .top {
@@ -20,6 +22,13 @@ html, body {
     background-color: var(--primary-color);
     z-index: -1;
     position: absolute;
+
+}
+
+.split {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
 .bottom {
@@ -27,6 +36,7 @@ html, body {
     right: 0;
     height: 101vh;
     top: 100vh;
+    /* grid-area */
     background-color: var(--secondary-color);
     position: absolute;
     z-index: -2;
@@ -37,14 +47,17 @@ html, body {
     right: 10%;
     top: 200px;
     border-radius: 50%;
+    /* grid-column-start: 5;
+    grid-row-start: 2; */
 }
 
 h1 {
     color: white; 
     position: absolute;
-    top: 22rem;
+    top: 20rem;
     right: 35%;
     font-size: 35px;
+    font-family: var(--primary-font, sans-serif);
     /* text-shadow: 0px 2px 5px; */
 }
 
@@ -53,6 +66,7 @@ h2 {
     color: var(--title-color);
     top: 125%;
     left: 58%;
+    font-family: var(--primary-font, sans-serif);
 }
 
 .about-me-container {
@@ -60,9 +74,10 @@ h2 {
     background-color: var(--container-color);
     height: 50%;
     width: 30%;
-    /* text-align: center; */
-    /* area around content */
-    /* border-weight:  */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-family: var(--secondary-font, sans-serif);
     padding: 40px 20px;
     /* area outside of box, position of box on page */
     margin: 61rem 50rem 20rem;
@@ -97,7 +112,7 @@ h2 {
 footer {
     position: absolute;
     top: 195dvh;
-    width: 100%;
+    width: 100dvw;
     height: 2.5rem;
 }
 
@@ -107,7 +122,7 @@ nav {
     /* height: fit-content; */
     top: 0.5rem;
     right: 5%;
-    /* transition: top 0.3s; */
+    font-family: var(--primary-font, sans-serif);
 }
 
 nav a {
@@ -118,14 +133,14 @@ nav a {
     padding: 15px;
     border-radius: 25px;
     word-spacing: 3px;
-}
 
-nav a:hover {
-    background-color: #ddd;
-    transition: background-color 0.6s ease;
-    color: black;
-}
+    &:hover {
+        background-color: #ddd;
+        transition: background-color 0.6s ease;
+        color: black;
+    }
 
-nav a:link {
-    text-decoration: none;
+    &:link {
+        text-decoration: none;
+    }
 }
