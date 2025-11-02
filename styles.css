@@ -54,10 +54,14 @@ h2 {
     border-radius: 10px;
 }
 
-.prince img{
-    
+.prince img {
+    top: 120%;
+    right: 70%;
+    width: 200 px;
+    height: 200 px;
+    object-fit: cover;
     position: absolute;
-    border-radius: 10%;
+    border-radius: 80%;
 }
 
 footer {
