@@ -37,7 +37,7 @@ h1 {
 h2 {
     position: absolute;
     color: #274C77;
-    top: 123%;
+    top: 125%;
     left: 58%;
 }
 
@@ -50,18 +50,32 @@ h2 {
     /* area around content */
     padding: 40px 20px;
     /* area outside of box, position of box on page */
-    margin: 60rem 50rem 20rem;
+    margin: 61rem 50rem 20rem;
     border-radius: 10px;
 }
 
 .prince img {
-    top: 120%;
+    top: 110%;
     right: 70%;
-    width: 200 px;
-    height: 200 px;
     object-fit: cover;
     position: absolute;
-    border-radius: 80%;
+    border-radius: 8px;
+}
+
+.me-2 img {
+    top: 125%;
+    right: 50%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 8px;
+}
+
+.prince-2 img {
+    top: 145%;
+    right: 70%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 8px;
 }
 
 footer {
