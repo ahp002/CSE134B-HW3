@@ -119,6 +119,6 @@ footer {
     position: absolute;
     bottom: 0;
     width: 99dvw;
-    color: white;
+    color: var(--title-color);
     font-family: var(--primary-font, sans-serif);
 }

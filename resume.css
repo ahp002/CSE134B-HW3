@@ -12,6 +12,11 @@ body {
     background-color: var(--primary-color);
 }
 
+h1 {
+    font-family: var(--primary-font, sans-serif);
+    color: var(--title-color);
+}
+
 nav {
     /* background-color: #dbe4ee; */
     position: absolute;
@@ -45,6 +50,6 @@ footer {
     position: absolute;
     bottom: 0;
     width: 99dvw;
-    color: white;
+    color: var(--title-color);
     font-family: var(--primary-font, sans-serif);
 }
