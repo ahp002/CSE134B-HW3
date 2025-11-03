@@ -115,6 +115,11 @@ nav a {
     }
 }
 
+.visit {
+    background-color: #ddd;
+    color: black;
+}
+
 footer {
     position: absolute;
     bottom: 0;

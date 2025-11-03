@@ -132,6 +132,11 @@ nav a {
     }
 }
 
+.visit {
+    background-color: #ddd;
+    color: black;
+}
+
 /* @media screen {
     
 } */
