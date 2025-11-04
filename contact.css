@@ -11,65 +11,94 @@
 body {
     background-color: var(--primary-color, white);
     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100vw;
 }
 
 h2 {
     font-family: var(--primary-font, sans-serif);
     color: white;
+    align-self: flex-start;
+    margin-left: 2rem;
+}
+
+header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
 }
 
-.connections {
-    top: 60%;
-    position: absolute;
-    font-family: var(--secondary-font, sans-serif);
-    color: white;
-
-
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  gap: 2rem;
+  padding: 2rem 0;
+  font-family: var(--secondary-font, sans-serif);   
 }
 
-.github {
-    position: absolute;
-    top: 30%;
-    right: 72%;
+/* .github {
+    border-radius: 80%;
+    object-fit: fit;
+    object-position: cover;
     transition: transform 0.5s ease;
-}
+} */
 
-a:hover .github{
+/* a:hover .github{
     transform: scale(1.1);
-}
+} */
 
-.linkedin {
-    position: absolute;
-    top: 30%;
-    right: 90%;
+/* .linkedin {
     transition: transform 0.5s ease;
-}
+} */
 
-a:hover .linkedin{
+/* a:hover .linkedin{
     transform: scale(1.1);
-}
+} */
 
-
-.email {
-    position: absolute;
-    top: 30%;
-    right: 62%;
+picture img {
     border-radius: 49%;
-    justify-content: center;
+    object-position: cover;
+    object-fit: fit;
+    transition: transform 0.5s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+/* .email {
+    border-radius: 49%;
     object-fit: cover;
     transition: transform 0.5s ease;
-}
+} */
 
-a:hover .email{
+/* a:hover .email{
     transform: scale(1.1);
+} */
+
+picture {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 85px;
 }
 
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 dialog {
-    position: absolute;
-    top: 25%;
-    left: 53%;
+    padding: 1rem;
+    position: static;
     border: none;
     border-style: inset;
     font-family: var(--primary-font, sans-serif);
@@ -77,20 +106,15 @@ dialog {
 }
 
 fieldset {
-    position: absolute;
-    top: 35%;
-    right: 10%;
     width: fit-content;
     font-family: var(--primary-font, sans-serif);
     color: white;
 }
 
 nav {
-    /* background-color: #dbe4ee; */
-    position: absolute;
-    /* height: fit-content; */
-    top: 0.5rem;
-    right: 5%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 18px;
     font-family: var(--primary-font, sans-serif);
 }
 
@@ -129,7 +153,7 @@ nav a {
 }
 
 footer {
-    position: absolute;
+    padding: 0.5rem 0;
     bottom: 0;
     width: 99dvw;
     color: var(--title-color, black);
