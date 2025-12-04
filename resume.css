@@ -92,6 +92,6 @@ nav a {
 
 footer {
     width: 100%;
-    color: var(--color);
+    color: var(--title-color);
     font-family: var(--primary-font, sans-serif);
 }
