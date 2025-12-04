@@ -10,6 +10,12 @@
 
 body {
     background-color: var(--primary-color);
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
 }
 
 .sanrio-card {
@@ -119,9 +125,7 @@ nav a {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 99dvw;
+    width: 100%;
     color: var(--title-color);
     font-family: var(--primary-font, sans-serif);
 }
