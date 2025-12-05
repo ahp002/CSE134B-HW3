@@ -76,7 +76,7 @@ h2 {
     /* area outside of box, position of box on page */
     margin: 11rem 50rem 20rem;
     border-radius: 10px;
-    border: 6px solid var(--primary-color);
+    border: 6px solid var(--title-color);
 }
 
 .prince {
