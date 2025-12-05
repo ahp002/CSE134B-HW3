@@ -16,3 +16,45 @@ function scrollUp() {
     // every other browser
     document.documentElement.scrollTop = 0;
 }
+var lines = [
+    "HI!",
+    "MY NAME IS ALICIA PHAM",
+    "I'M A MATHEMATICS-COMPUTER SCIENCE STUDENT"
+];
+
+var typingSpeed = 130;
+var lineIndex = 0;
+var charIndex = 0;
+var displayElement = document.getElementById("typed-text");
+
+function typeWriterEffect() {
+    if (lineIndex < lines.length) {
+        let currentLine = lines[lineIndex];
+
+        let output = "";
+        for (let i = 0; i < lineIndex; i++) {
+            output += lines[i] + "<br>";
+        }
+
+        output += currentLine.substring(0, charIndex + 1) + "|";
+
+        displayElement.innerHTML = output;
+        charIndex++;
+
+        if (charIndex >= currentLine.length) {
+            charIndex = 0;
+            lineIndex++;
+            setTimeout(typeWriterEffect, 500);
+        } else {
+            setTimeout(typeWriterEffect, typingSpeed);
+        }
+    } else {
+        let finalOutput = "";
+        for (let i = 0; i < lines.length; i++) {
+            finalOutput += lines[i] + "<br>";
+        }
+        displayElement.innerHTML = finalOutput;
+    }
+}
+
+typeWriterEffect();
