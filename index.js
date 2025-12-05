@@ -19,7 +19,7 @@ function scrollUp() {
 var lines = [
     "HI!",
     "MY NAME IS ALICIA PHAM",
-    "I'M A MATHEMATICS-COMPUTER SCIENCE STUDENT"
+    "A MATHEMATICS-COMPUTER SCIENCE STUDENT"
 ];
 
 var typingSpeed = 130;
