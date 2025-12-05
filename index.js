@@ -58,3 +58,27 @@ function typeWriterEffect() {
 }
 
 typeWriterEffect();
+
+const topSplit = document.querySelector('.top');
+const bottomSplit = document.querySelector('.bottom');
+
+const topColor = [0, 48, 73];
+const bottomColor = [1, 31, 48]; 
+
+const speedFactor = 2.25;
+
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY || window.pageYOffset;
+    const windowHeight = window.innerHeight;
+    
+    let progress = Math.min((scrollY / windowHeight) * speedFactor, 1);
+    
+    const topRGB = topColor.map((c, i) => Math.round(c + (bottomColor[i] - c) * progress));
+    
+    topSplit.style.backgroundColor = `rgb(${topRGB[0]}, ${topRGB[1]}, ${topRGB[2]})`;
+    
+    bottomSplit.style.backgroundColor = `rgb(${bottomColor[0]}, ${bottomColor[1]}, ${bottomColor[2]})`;
+});
+
+
+
