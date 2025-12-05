@@ -101,6 +101,10 @@ picture {
   align-items: center;
 }
 
+.form {
+    margin-bottom: 10%;
+}
+
 dialog {
     padding: 1rem;
     position: static;
