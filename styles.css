@@ -160,11 +160,11 @@ nav a {
 }
 
 #topBtn {
-    /* display: none; */
+    display: none;
     position: fixed;
     bottom: 20px;
     right: 30px;
-    z-index: 99;
+    z-index: 9999;
     border: none;
     outline: none;
     background-color: darkgray;
